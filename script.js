@@ -3,7 +3,7 @@ const counter = document.querySelector("#counter");
 const TrueColorDiv = document.querySelector("#TrueColor");
 const PlayerColor = document.querySelector("#PlayerColor");
 
-const Sliders = document.querySelectorAll(".slider")
+const Sliders = document.querySelectorAll(".slider");
 
 let CharacterArray = ["0","1","2","3","4","5","6","5","6","7",
                       "8","9","A", "B", "C", "D", "E", "F"];
@@ -29,8 +29,25 @@ function Run(){
     setTimeout(() => {
         clearInterval(timer);
         counter.textContent = "";
+
+        const Red = document.querySelector("#Red");
+        const Green = document.querySelector("#Green");
+        const Blue = document.querySelector("#Blue");
+        const Display = document.querySelector("#Display");
+
         TrueColorDiv.style.display ="none"
-        PlayerColor.style.display = "block";
+        PlayerColor.style.display = "flex";
+        Red.oninput = () => {
+            Display.style.backgroundColor = `rgb(${Red.value}, ${Green.value}, ${Blue.value})`;
+        };
+        Green.oninput = () => {
+            Display.style.backgroundColor = `rgb(${Red.value}, ${Green.value}, ${Blue.value})`;
+        };
+        Blue.oninput = () => {
+            Display.style.backgroundColor = `rgb(${Red.value}, ${Green.value}, ${Blue.value})`;
+        };
+        
+        
     },6000);
 
     
