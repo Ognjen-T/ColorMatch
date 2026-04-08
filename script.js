@@ -11,7 +11,7 @@ let Color = "";
 
 
 
-    let i = 5;
+    let i = 500;
 function Run(){
     TrueColorDiv.style.display ="block"
     Color = "";
@@ -24,7 +24,7 @@ function Run(){
     const timer = setInterval(() => {
         counter.textContent = i;
         i--;       
-    },1000);
+    },10);
 
     setTimeout(() => {
         clearInterval(timer);
@@ -48,7 +48,7 @@ function Run(){
         };
         
         
-    },6000);
+    },5000);
 
     
     
