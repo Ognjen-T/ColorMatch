@@ -37,7 +37,7 @@ body{
     position: relative;
     width: 100px;
     height: 100%;
-    border: 1px solid black;
+    background-color: rgb(250, 245, 245);
 }
 
 .slider{
@@ -133,4 +133,25 @@ body{
 }
 #PCtxt{
     margin-top: 80px;
+}
+
+
+#MessageBg {
+    background-color: rgba(0, 0, 0, 0.6); 
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#MessageDiv {
+    z-index: 0;
+    width: 400px;
+    height: 300px;
+    background-color: aliceblue;
+    border-radius: 15px;
 }
